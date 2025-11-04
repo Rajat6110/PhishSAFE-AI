@@ -1,0 +1,37 @@
+[ 2025-10-11 21:40:58,684 ] 225 werkzeug - WARNING -  * Debugger is active!
+[ 2025-10-11 21:40:58,690 ] 225 werkzeug - INFO -  * Debugger PIN: 214-276-007
+[ 2025-10-11 21:40:59,360 ] 225 werkzeug - INFO -  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+[ 2025-10-11 21:41:00,168 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 21:41:00] "GET / HTTP/1.1" 200 -
+[ 2025-10-11 21:41:00,274 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 21:41:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2025-10-11 21:41:00,384 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 21:41:00] "[33mGET /script.js HTTP/1.1[0m" 404 -
+[ 2025-10-11 21:41:12,995 ] 41 root - INFO - Saved input CSV at prediction_artifacts\phising.csv
+[ 2025-10-11 21:41:13,123 ] 125 root - INFO - Input CSV read successfully for prediction.
+[ 2025-10-11 21:41:13,141 ] 58 root - INFO - Dropped target column 'Result' before prediction.
+[ 2025-10-11 21:41:13,143 ] 79 root - INFO - Using local model at: artifacts\model.pkl
+[ 2025-10-11 21:41:13,143 ] 77 root - INFO - Model downloaded successfully from S3: artifacts\model.pkl
+[ 2025-10-11 21:41:13,144 ] 49 root - INFO - Entered the load_object method of MainUtils class
+[ 2025-10-11 21:41:13,244 ] 53 root - INFO - Exited the load_object method of MainUtils class
+[ 2025-10-11 21:41:13,248 ] 35 root - INFO - Entered predict method of srcTruckModel class
+[ 2025-10-11 21:41:13,248 ] 38 root - INFO - Using the trained model to get predictions
+[ 2025-10-11 21:41:13,265 ] 42 root - INFO - Used the trained model to get predictions
+[ 2025-10-11 21:41:13,315 ] 111 root - INFO - Prediction completed.
+[ 2025-10-11 21:41:13,524 ] 137 root - INFO - Predictions saved at predictions\predicted_file.csv
+[ 2025-10-11 21:41:13,526 ] 31 root - INFO - Prediction completed. Downloading prediction file.
+[ 2025-10-11 21:41:13,566 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 21:41:13] "POST /predict HTTP/1.1" 200 -
+[ 2025-10-11 21:41:26,877 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 21:41:26] "GET / HTTP/1.1" 200 -
+[ 2025-10-11 21:41:26,943 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 21:41:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2025-10-11 21:41:27,104 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 21:41:27] "[33mGET /script.js HTTP/1.1[0m" 404 -
+[ 2025-10-11 21:41:36,137 ] 41 root - INFO - Saved input CSV at prediction_artifacts\phising.csv
+[ 2025-10-11 21:41:36,195 ] 125 root - INFO - Input CSV read successfully for prediction.
+[ 2025-10-11 21:41:36,198 ] 58 root - INFO - Dropped target column 'Result' before prediction.
+[ 2025-10-11 21:41:36,199 ] 79 root - INFO - Using local model at: artifacts\model.pkl
+[ 2025-10-11 21:41:36,199 ] 77 root - INFO - Model downloaded successfully from S3: artifacts\model.pkl
+[ 2025-10-11 21:41:36,199 ] 49 root - INFO - Entered the load_object method of MainUtils class
+[ 2025-10-11 21:41:36,209 ] 53 root - INFO - Exited the load_object method of MainUtils class
+[ 2025-10-11 21:41:36,212 ] 35 root - INFO - Entered predict method of srcTruckModel class
+[ 2025-10-11 21:41:36,212 ] 38 root - INFO - Using the trained model to get predictions
+[ 2025-10-11 21:41:36,218 ] 42 root - INFO - Used the trained model to get predictions
+[ 2025-10-11 21:41:36,244 ] 111 root - INFO - Prediction completed.
+[ 2025-10-11 21:41:36,347 ] 137 root - INFO - Predictions saved at predictions\predicted_file.csv
+[ 2025-10-11 21:41:36,347 ] 31 root - INFO - Prediction completed. Downloading prediction file.
+[ 2025-10-11 21:41:36,378 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 21:41:36] "POST /predict HTTP/1.1" 200 -

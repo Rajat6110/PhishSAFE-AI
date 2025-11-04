@@ -1,0 +1,6 @@
+[ 2025-10-09 01:24:26,710 ] 225 werkzeug - WARNING -  * Debugger is active!
+[ 2025-10-09 01:24:26,719 ] 225 werkzeug - INFO -  * Debugger PIN: 214-276-007
+[ 2025-10-09 01:24:27,186 ] 225 werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[ 2025-10-09 01:24:27,186 ] 225 werkzeug - INFO -  * Running on http://172.20.10.3:8080/ (Press CTRL+C to quit)
+[ 2025-10-09 01:28:22,747 ] 225 werkzeug - INFO -  * Detected change in 'C:\\Users\\VICTUS\\Downloads\\major\\phishing-classifier-main\\app.py', reloading

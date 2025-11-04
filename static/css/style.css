@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* Global Body Styling - Sets up the full page background */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0d002a 0%, #000000 100%); /* Deep dark base */
+    overflow: hidden; /* Hide anything outside the viewport */
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: #fff; /* Default text color */
+}
+
+.frame {
+    position: relative; /* Changed to relative to allow absolute positioning of .center and .bg-particles inside */
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    /* Main glow for the frame itself, blending with the background */
+    box-shadow: 0 0 60px 20px rgba(0, 255, 255, 0.3), 0 0 100px 40px rgba(255, 0, 255, 0.3);
+    overflow: hidden; /* Ensures particles stay within the frame */
+    background: linear-gradient(
+        135deg,
+        rgba(28, 15, 79, 0.4) 0%,
+        rgba(8, 0, 42, 0.4) 100%
+    ); /* Slightly transparent gradient overlay */
+    backdrop-filter: blur(2px); /* Subtle blur for the background inside the frame */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Very subtle border */
+    animation: frame-pulse 8s infinite alternate ease-in-out; /* Main frame animation */
+}
+
+/* Keyframe for frame glow animation */
+@keyframes frame-pulse {
+    0% {
+        box-shadow: 0 0 60px 20px rgba(0, 255, 255, 0.3), 0 0 100px 40px rgba(255, 0, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 80px 30px rgba(0, 255, 255, 0.5), 0 0 120px 50px rgba(255, 0, 255, 0.5);
+    }
+}
+
+.center {
+    position: absolute; /* Positioned absolutely within the frame */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 280px;
+    border-radius: 12px; /* More rounded corners */
+    /* Semi-transparent background with blur for glassmorphism effect */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px); /* Stronger blur for transparency */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* More visible border */
+    /* Inner neon glow for the card */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 40px rgba(255, 0, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+    z-index: 10; /* Ensure it's above background particles */
+}
+
+.center:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), 0 0 60px rgba(255, 0, 255, 0.6); /* Stronger glow on hover */
+    transform: translate(-50%, -50%) scale(1.02); /* Slight scale on hover */
+}
+
+.title {
+    width: 100%;
+    /* No bottom border for a cleaner look, using margin */
+    text-align: center;
+    margin-bottom: 10px; /* Space below title */
+}
+
+.title h1 {
+    font-size: 20px; /* Larger font */
+    font-weight: 700;
+    color: #fff; /* White text */
+    margin: 0; /* Remove default margin */
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.5); /* Subtle text glow */
+}
+
+.title p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 5px;
+}
+
+.dropzone {
+    width: 130px; /* Slightly larger dropzone */
+    height: 110px;
+    border: 2px dashed rgba(0, 255, 255, 0.6); /* Neon blue dashed border */
+    border-radius: 10px; /* More rounded corners */
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background: rgba(0, 255, 255, 0.05); /* Very light blue tint */
+    display: flex; /* Use flex to center the icon */
+    align-items: center;
+    justify-content: center;
+}
+
+.dropzone:hover {
+    border-color: rgba(255, 0, 255, 0.8); /* Change to magenta on hover */
+    background: rgba(255, 0, 255, 0.1); /* Light magenta tint */
+    transform: scale(1.08); /* More pronounced scale on hover */
+}
+
+.upload-icon {
+    width: 50px; /* Size of the SVG icon */
+    height: 50px;
+    color: #0ff; /* Neon blue icon color */
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.8)); /* Icon glow */
+    animation: float-up-down 2s infinite alternate ease-in-out; /* Smooth float animation */
+}
+
+@keyframes float-up-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-8px); /* More vertical movement */
+    }
+}
+
+.upload-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.btn {
+    display: block;
+    width: 180px; /* Wider button */
+    height: 50px; /* Taller button */
+    background: linear-gradient(90deg, #0ff 0%, #f0f 100%); /* Neon gradient */
+    color: #fff;
+    border-radius: 30px; /* More pill-shaped */
+    border: none; /* Removed border */
+    /* Stronger button shadow, matching gradient */
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5);
+    transition: all 0.4s ease-in-out;
+    font-size: 18px; /* Larger font */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    position: relative; /* For pseudo-element effects */
+    overflow: hidden; /* Hide overflow for hover effect */
+    z-index: 1;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: all 0.6s;
+    z-index: -1;
+}
+
+.btn:hover:before {
+    left: 100%;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #f0f 0%, #0ff 100%); /* Reverse gradient on hover */
+    box-shadow: 0 10px 25px rgba(255, 0, 255, 0.7); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Lift button on hover */
+}
+
+/* Background Particle System */
+.bg-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1; /* Below the .center card */
+}
+
+.particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%; /* Round particles */
+    background: #0ff; /* Neon blue */
+    box-shadow: 0 0 8px #f0f; /* Neon magenta glow */
+    opacity: 0; /* Start invisible */
+    animation: particle-flow 15s infinite linear;
+}
+
+/* Specific particle delays and positions */
+.p1 { top: 10%; left: 5%; animation-delay: 0s; }
+.p2 { top: 70%; left: 80%; animation-delay: 2.5s; width: 4px; height: 4px; background: #f0f; }
+.p3 { top: 40%; left: 40%; animation-delay: 5s; }
+.p4 { top: 20%; left: 60%; animation-delay: 7.5s; width: 2px; height: 2px; }
+.p5 { top: 85%; left: 20%; animation-delay: 10s; background: #f0f; }
+.p6 { top: 55%; left: 90%; animation-delay: 12.5s; width: 5px; height: 5px; }
+
+
+/* Particle animation keyframes */
+@keyframes particle-flow {
+    0% {
+        transform: translate(0, 0) scale(0.5);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(
+            calc(var(--rand-x) * 100vw), /* Random X movement (will need JS for true randomness) */
+            calc(var(--rand-y) * 100vh) /* Random Y movement (will need JS for true randomness) */
+        ) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* For truly random particle movement, you'd typically use JavaScript to set --rand-x and --rand-y CSS variables.
+   Without JS, they will just follow a fixed path. For a pure CSS solution, you'd need to define more explicit paths
+   or rely on simply making them fade in/out. The current setup offers a basic, repeatable flow. */
+/* Example for JS to set random variables:
+document.querySelectorAll('.particle').forEach(p => {
+  p.style.setProperty('--rand-x', (Math.random() - 0.5) * 2);
+  p.style.setProperty('--rand-y', (Math.random() - 0.5) * 2);
+});
+*/

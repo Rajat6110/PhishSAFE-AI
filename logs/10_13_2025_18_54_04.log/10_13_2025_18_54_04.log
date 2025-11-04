@@ -1,0 +1,6 @@
+[ 2025-10-13 18:54:09,863 ] 225 werkzeug - WARNING -  * Debugger is active!
+[ 2025-10-13 18:54:09,868 ] 225 werkzeug - INFO -  * Debugger PIN: 630-044-865
+[ 2025-10-13 18:54:10,278 ] 225 werkzeug - INFO -  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+[ 2025-10-13 18:54:28,638 ] 225 werkzeug - INFO - 127.0.0.1 - - [13/Oct/2025 18:54:28] "GET / HTTP/1.1" 200 -
+[ 2025-10-13 18:54:28,869 ] 225 werkzeug - INFO - 127.0.0.1 - - [13/Oct/2025 18:54:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2025-10-13 18:54:29,118 ] 225 werkzeug - INFO - 127.0.0.1 - - [13/Oct/2025 18:54:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

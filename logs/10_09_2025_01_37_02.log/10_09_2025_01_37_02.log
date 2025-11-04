@@ -1,0 +1,6 @@
+[ 2025-10-09 01:37:07,611 ] 225 werkzeug - WARNING -  * Debugger is active!
+[ 2025-10-09 01:37:07,616 ] 225 werkzeug - INFO -  * Debugger PIN: 214-276-007
+[ 2025-10-09 01:37:08,017 ] 225 werkzeug - INFO -  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+[ 2025-10-09 01:37:11,205 ] 225 werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 01:37:11] "GET / HTTP/1.1" 200 -
+[ 2025-10-09 01:37:11,837 ] 225 werkzeug - INFO - 127.0.0.1 - - [09/Oct/2025 01:37:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2025-10-09 01:38:02,045 ] 225 werkzeug - INFO -  * Detected change in 'C:\\Users\\VICTUS\\Downloads\\major\\phishing-classifier-main\\app.py', reloading

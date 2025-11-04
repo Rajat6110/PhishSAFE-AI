@@ -1,0 +1,11 @@
+[ 2025-10-11 15:24:13,322 ] 225 werkzeug - WARNING -  * Debugger is active!
+[ 2025-10-11 15:24:13,328 ] 225 werkzeug - INFO -  * Debugger PIN: 214-276-007
+[ 2025-10-11 15:24:13,647 ] 225 werkzeug - INFO -  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+[ 2025-10-11 15:24:22,246 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 15:24:22] "GET / HTTP/1.1" 200 -
+[ 2025-10-11 15:24:22,406 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 15:24:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2025-10-11 15:24:22,492 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 15:24:22] "[33mGET /script.js HTTP/1.1[0m" 404 -
+[ 2025-10-11 15:27:47,297 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 15:27:47] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2025-10-11 15:27:47,333 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 15:27:47] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2025-10-11 15:27:47,345 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 15:27:47] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2025-10-11 15:27:47,520 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 15:27:47] "GET /predict?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[ 2025-10-11 15:27:47,552 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 15:27:47] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -

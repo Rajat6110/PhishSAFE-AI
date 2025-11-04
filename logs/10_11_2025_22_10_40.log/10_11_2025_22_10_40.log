@@ -1,0 +1,5 @@
+[ 2025-10-11 22:10:40,914 ] 49 root - INFO - Entered the load_object method of MainUtils class
+[ 2025-10-11 22:10:41,377 ] 53 root - INFO - Exited the load_object method of MainUtils class
+[ 2025-10-11 22:10:41,421 ] 35 root - INFO - Entered predict method of srcTruckModel class
+[ 2025-10-11 22:10:41,421 ] 38 root - INFO - Using the trained model to get predictions
+[ 2025-10-11 22:10:41,427 ] 42 root - INFO - Used the trained model to get predictions

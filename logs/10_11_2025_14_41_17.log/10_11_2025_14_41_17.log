@@ -1,0 +1,13 @@
+[ 2025-10-11 14:41:21,571 ] 225 werkzeug - WARNING -  * Debugger is active!
+[ 2025-10-11 14:41:21,577 ] 225 werkzeug - INFO -  * Debugger PIN: 214-276-007
+[ 2025-10-11 14:41:22,008 ] 225 werkzeug - INFO -  * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)
+[ 2025-10-11 14:42:53,685 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 14:42:53] "GET /predict HTTP/1.1" 200 -
+[ 2025-10-11 14:42:53,854 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 14:42:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2025-10-11 14:42:53,864 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 14:42:53] "[33mGET /script.js HTTP/1.1[0m" 404 -
+[ 2025-10-11 14:43:18,034 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 14:43:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2025-10-11 14:43:18,065 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 14:43:18] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2025-10-11 14:43:18,078 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 14:43:18] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2025-10-11 14:43:18,175 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 14:43:18] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2025-10-11 14:43:18,178 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 14:43:18] "GET /predict?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[ 2025-10-11 14:43:18,270 ] 225 werkzeug - INFO - 127.0.0.1 - - [11/Oct/2025 14:43:18] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2025-10-11 14:49:50,131 ] 225 werkzeug - INFO -  * Detected change in 'C:\\Users\\VICTUS\\Downloads\\major\\phishing-classifier-main\\app.py', reloading
